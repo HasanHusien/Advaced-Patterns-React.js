@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { faker } from "@faker-js/faker";
 import { useState } from "react";
 const products = Array.from({ length: 20 }, () => {
@@ -74,7 +73,7 @@ function List({ title, items, render }) {
 }
 
 // use func (render) and pass it to component(List) that i want to share with his (state Logic and content and all thing)
-// with different components with another content(product, company) similar {children}. woowwwwwwwwwwwwwwwwww.
+// with different components with another content(product, company) similar {children}. 
 export default function App() {
   return (
     <div>
@@ -100,7 +99,6 @@ export default function App() {
   );
 }
 
-// LATER: Let's say we got this component from a 3rd-party library, and can't change it. But we still want to add the 2 toggle functionalities to it
 function ProductList({ title, items }) {
   return (
     <ul className="list">
